@@ -24,19 +24,20 @@ pcl_pub = nh.advertise<sensor_msgs::PointCloud2>("statistical_outlier_removal_cl
 
 void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 & input)
 {
-pcl::PointCloud<pcl::PointXYZ> cloud, filtered_cloud;
+pcl::PointCloud<pcl::PointXYZRGB> cloud, filtered_cloud;
 sensor_msgs::PointCloud2 result;
 
 
 pcl::fromROSMsg(input,cloud);
-pcl::StatisticalOutlierRemoval<pcl::PointXYZ> statFilter;
+pcl::StatisticalOutlierRemoval<pcl::PointXYZRGB> statFilter;
 statFilter.setInputCloud(cloud.makeShared());
 statFilter.setMeanK(50);
 statFilter.setStddevMulThresh(0.2);
 statFilter.filter(filtered_cloud);
 pcl::toROSMsg(filtered_cloud,result);
-result.header.frame_id="map";
 
+result.header.stamp = input.header.stamp;
+result.header.frame_id = input.header.frame_id;
 
 pcl_pub.publish(result);
 
