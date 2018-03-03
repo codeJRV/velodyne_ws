@@ -5,7 +5,9 @@
  <node pkg="tf" type="static_transform_publisher" name="map2velodyne" args="0.0 0.0 0.0 0 0 0 1 map velodyne 10" />
 
 <node pkg="rosbag" type="play" name="player" output="screen" args="-l $(arg rosbag_file)"/>
-<node name="a3" pkg="lidar_sp" />
+<node name="a1" pkg="lidar_sp" type="a1" />
+<node name="a2" pkg="lidar_sp" type="a2" />
+<node name="a3" pkg="lidar_sp" type="a3" />
 <node name="rviz" pkg="rviz" type="rviz" args="-f velodyne -d $(find velodyne_visualizer)/display3.rviz" />
 
 </launch>

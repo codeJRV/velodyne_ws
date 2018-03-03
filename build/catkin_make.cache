@@ -1,0 +1,2 @@
+lidar_sp:velodyne/velodyne:velodyne/velodyne_driver:velodyne/velodyne_laserscan:velodyne/velodyne_msgs:velodyne/velodyne_pointcloud:velodyne_visualizer
+-DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/jrv/Research/Velodyne/velodyne_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jrv/Research/Velodyne/velodyne_ws/install -G Unix Makefiles

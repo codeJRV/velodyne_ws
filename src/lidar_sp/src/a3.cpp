@@ -22,7 +22,7 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
-typedef pcl::PointXYZ PointT;
+typedef pcl::PointXYZRGB PointT;
 
 class cloud_filter
 {
@@ -47,33 +47,34 @@ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
 {
   //pcl::PointCloud<PointT> cloud, filtered_cloud;
 
+
   pcl::PointCloud<PointT>::Ptr cloud( new pcl::PointCloud<PointT>() ), filtered_cloud( new pcl::PointCloud<PointT>() );
 
   sensor_msgs::PointCloud2 result;
 
- pcl::fromROSMsg(input,*cloud);
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // std::cerr << "Point cloud data: " << cloud.points.size() << " points" << std::endl;
+   pcl::fromROSMsg(input,*cloud);
 
-  // pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients);
-  // pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
-  // // Create the segmentation object
-  // pcl::SACSegmentation<PointT> seg;
-  // // Optional
-  // seg.setOptimizeCoefficients(true);
-  // // Mandatory
-  // seg.setModelType(pcl::SACMODEL_LINE);
-  // seg.setMethodType(pcl::SAC_RANSAC);
-  // seg.setDistanceThreshold(0.01);
+   pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients ());
+   pcl::PointIndices::Ptr inliers (new pcl::PointIndices ()); 
+   pcl::SACSegmentation<PointT> seg;
+   seg.setInputCloud (cloud);
+   seg.setOptimizeCoefficients(true);	
+   seg.setMethodType(pcl::SAC_RANSAC); 
+   seg.setModelType(pcl::SACMODEL_PARALLEL_LINE); 
+   seg.setDistanceThreshold(0.1);                                                       // NEED TO UNDERSTAND TO TUNE THESE VALUES 
+   seg.setAxis(Eigen::Vector3f(0,0,1)); // Vertical axis                                // NEED TO UNDERSTAND TO TUNE THESE VALUES 
+   seg.setEpsAngle(0.174533);    //10 degrees                                           // NEED TO UNDERSTAND TO TUNE THESE VALUES 
 
-  // seg.setInputCloud(cloud);
-  // seg.segment(*inliers, *coefficients);
+   pcl::ExtractIndices<PointT> extract;
+   //std::cerr << "Reached yo " ;
 
-  // if (inliers->indices.size() == 0)
-  // {
-  //   PCL_ERROR("Could not estimate a linear model for the given dataset.");
-  //   return (-1);
-  // }
+   // Obtain the plane inliers and coefficients
+    seg.segment (*inliers, *coefficients);
+    std::cerr << "Plane coefficients: " << *coefficients << std::endl;
+ 
+   extract.setInputCloud (cloud);
+   extract.setIndices (inliers);
+   extract.setNegative (false);
 
   // std::cerr << "Model coefficients: " << coefficients->values[0] << " "
   //           << coefficients->values[1] << " "
@@ -83,28 +84,6 @@ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
   // std::cerr << "Model inliers: " << inliers->indices.size() << std::endl;
 
 
-
-  // for (size_t i = 0; i < inliers->indices.size(); ++i)
-  // { 
-  //   filtered_cloud.points.push_back( cloud->points[inliers->indices[i]]);
-  //   ++filtered_cloud.width;
-  // }
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-   pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients ());
-   pcl::PointIndices::Ptr inliers (new pcl::PointIndices ()); 
-   pcl::SACSegmentation<PointT> seg;
-   seg.setOptimizeCoefficients (true);
-   seg.setModelType (pcl::SACMODEL_LINE);
-   seg.setMethodType (pcl::SAC_RANSAC);
-   seg.setDistanceThreshold (0.01);
-   pcl::ExtractIndices<PointT> extract;
-   // Segment the largest planar component from the remaining cloud
-   seg.setInputCloud (cloud);
-   extract.setInputCloud (cloud);
-   extract.setIndices (inliers);
-   extract.setNegative (false);
    extract.filter (*filtered_cloud);
 
   pcl::toROSMsg(*filtered_cloud, result);

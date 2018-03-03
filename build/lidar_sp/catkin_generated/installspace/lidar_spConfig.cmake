@@ -68,7 +68,7 @@ set(lidar_sp_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(lidar_sp_SOURCE_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp)
-  set(lidar_sp_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp)
+  set(lidar_sp_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel)
   set(lidar_sp_INSTALL_PREFIX "")
   set(lidar_sp_PREFIX ${lidar_sp_DEVEL_PREFIX})
 else()

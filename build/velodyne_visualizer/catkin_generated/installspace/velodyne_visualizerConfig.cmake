@@ -68,7 +68,7 @@ set(velodyne_visualizer_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(velodyne_visualizer_SOURCE_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/src/velodyne_visualizer)
-  set(velodyne_visualizer_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_visualizer)
+  set(velodyne_visualizer_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel)
   set(velodyne_visualizer_INSTALL_PREFIX "")
   set(velodyne_visualizer_PREFIX ${velodyne_visualizer_DEVEL_PREFIX})
 else()

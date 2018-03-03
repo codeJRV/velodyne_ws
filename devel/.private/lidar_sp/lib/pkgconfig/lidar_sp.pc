@@ -1,8 +1,0 @@
-prefix=/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp
-
-Name: lidar_sp
-Description: Description of lidar_sp
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib 
-Requires: 

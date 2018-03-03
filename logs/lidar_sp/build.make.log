@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target a3[0m
-[ 33%] Built target a1
-[ 66%] Built target a2
-[ 83%] [32mBuilding CXX object CMakeFiles/a3.dir/src/a3.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a3[0m
-[100%] Built target a3

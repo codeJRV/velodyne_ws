@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/a3.dir/src/a3.cpp.o"
-  "/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a3.pdb"
-  "/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a3"
+  "/home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a3.pdb"
+  "/home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a3"
 )
 
 # Per-language clean rules from dependency scanning.

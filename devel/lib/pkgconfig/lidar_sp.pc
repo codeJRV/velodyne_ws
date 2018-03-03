@@ -1,1 +1,8 @@
-/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/pkgconfig/lidar_sp.pc
+prefix=/home/jrv/Research/Velodyne/velodyne_ws/devel
+
+Name: lidar_sp
+Description: Description of lidar_sp
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jrv/Research/Velodyne/velodyne_ws/devel/lib 
+Requires: 

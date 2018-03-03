@@ -1,1 +1,6 @@
-/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/share/common-lisp/ros/velodyne_msgs/msg/_package_VelodyneScan.lisp
+(cl:in-package velodyne_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          PACKETS-VAL
+          PACKETS
+))
