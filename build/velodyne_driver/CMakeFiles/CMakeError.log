@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_31c4e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_31c4e.dir/build.make CMakeFiles/cmTC_31c4e.dir/build
+make[1]: Entering directory '/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31c4e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_31c4e.dir/CheckSymbolExists.c.o   -c /home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_31c4e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c4e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_31c4e.dir/CheckSymbolExists.c.o  -o cmTC_31c4e 
+CMakeFiles/cmTC_31c4e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_31c4e.dir/build.make:97: recipe for target 'cmTC_31c4e' failed
+make[1]: *** [cmTC_31c4e] Error 1
+make[1]: Leaving directory '/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_31c4e/fast' failed
+make: *** [cmTC_31c4e/fast] Error 2
+
+File /home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14ffc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14ffc.dir/build.make CMakeFiles/cmTC_14ffc.dir/build
+make[1]: Entering directory '/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14ffc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_14ffc.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_14ffc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14ffc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_14ffc.dir/CheckFunctionExists.c.o  -o cmTC_14ffc -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_14ffc.dir/build.make:97: recipe for target 'cmTC_14ffc' failed
+make[1]: *** [cmTC_14ffc] Error 1
+make[1]: Leaving directory '/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_driver/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_14ffc/fast' failed
+make: *** [cmTC_14ffc/fast] Error 2
+
+

@@ -1,10 +1,1 @@
-
-"use strict";
-
-let VelodynePacket = require('./VelodynePacket.js');
-let VelodyneScan = require('./VelodyneScan.js');
-
-module.exports = {
-  VelodynePacket: VelodynePacket,
-  VelodyneScan: VelodyneScan,
-};
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/share/gennodejs/ros/velodyne_msgs/msg/_index.js

@@ -1,0 +1,25 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::fromPCLPointCloud2ToVelodyneCloud(const pcl::PCLPointCloud2&, pcl::PointCloud<PointT>&, std::vector<pcl::PointCloud<PointT> >&, unsigned int)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:89:51:[m[K [01;31m[Kerror: [m[K‘[01m[K>>[m[K’ should be ‘[01m[K> >[m[K’ within a nested template argument list
+   cloudVector = std::vector<pcl::PointCloud<PointT>>(rings);
+[01;32m[K                                                   ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::cloud_callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:104:40:[m[K [01;31m[Kerror: [m[K‘[01m[K>>[m[K’ should be ‘[01m[K> >[m[K’ within a nested template argument list
+   vector<pcl::PointCloud<pcl::PointXYZI>> cloudVector;
+[01;32m[K                                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:30:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
+   pcl::toROSMsg(cloudVector, output);
+[01;32m[K                              ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/boost/iostreams/close.hpp:17:0[m[K,
+                 from [01m[K/usr/include/boost/iostreams/device/mapped_file.hpp:20[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/boost.h:77[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:43[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/boost/iostreams/categories.hpp:28:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::iostreams::output[m[K’
+ struct output : virtual any_tag { };
+[01;32m[K        ^[m[K
+make[2]: *** [CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o] Error 1
+make[1]: *** [CMakeFiles/lidar_sp.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,7 +1,1 @@
-\subsubsection usage Usage
-\verbatim
-<node name="velodyne_node" pkg="velodyne_driver" type="velodyne_node">
-  <param name="time_offset" type="double" value="0.0" />
-</node>
-\endverbatim
-
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_driver/share/velodyne_driver/docs/VelodyneNodeConfig-usage.dox

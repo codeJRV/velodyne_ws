@@ -1,0 +1,27 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::cloud_callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoROSMsg(std::vector<pcl::PointCloud<pcl::PointXYZI> >&, sensor_msgs::PointCloud2&)[m[K’
+   pcl::toROSMsg(cloudVector, output);
+[01;32m[K                                    ^[m[K
+In file included from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4:0[m[K:
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:487:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::toROSMsg(const PointCloud2&, sensor_msgs::Image&)
+   void toROSMsg(const sensor_msgs::PointCloud2 &cloud, sensor_msgs::Image &image)
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:487:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst PointCloud2& {aka const sensor_msgs::PointCloud2_<std::allocator<void> >&}[m[K’
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:507:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> void pcl::toROSMsg(const pcl::PointCloud<PointT>&, sensor_msgs::Image&)
+   toROSMsg (const pcl::PointCloud<T> &cloud, sensor_msgs::Image& msg)
+[01;32m[K   ^[m[K
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:507:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+   pcl::toROSMsg(cloudVector, output);
+[01;32m[K                                    ^[m[K
+In file included from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4:0[m[K:
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:539:8:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> void pcl::toROSMsg(const pcl::PointCloud<PointT>&, sensor_msgs::PointCloud2&)
+   void toROSMsg(const pcl::PointCloud<T> &pcl_cloud, sensor_msgs::PointCloud2 &cloud)
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:539:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+   pcl::toROSMsg(cloudVector, output);
+[01;32m[K                                    ^[m[K
+make[2]: *** [CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o] Error 1
+make[1]: *** [CMakeFiles/lidar_sp.dir/all] Error 2
+make: *** [all] Error 2

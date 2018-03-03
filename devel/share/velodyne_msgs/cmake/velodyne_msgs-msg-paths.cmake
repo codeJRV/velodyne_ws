@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(velodyne_msgs_MSG_INCLUDE_DIRS "/home/jrv/Research/Velodyne/velodyne_ws/src/velodyne/velodyne_msgs/msg")
-set(velodyne_msgs_MSG_DEPENDENCIES std_msgs)
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs-msg-paths.cmake

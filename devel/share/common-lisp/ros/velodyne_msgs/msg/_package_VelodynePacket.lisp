@@ -1,6 +1,1 @@
-(cl:in-package velodyne_msgs-msg)
-(cl:export '(STAMP-VAL
-          STAMP
-          DATA-VAL
-          DATA
-))
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/share/common-lisp/ros/velodyne_msgs/msg/_package_VelodynePacket.lisp

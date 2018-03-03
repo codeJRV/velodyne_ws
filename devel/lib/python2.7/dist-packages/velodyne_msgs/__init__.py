@@ -1,0 +1,1 @@
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/lib/python2.7/dist-packages/velodyne_msgs/__init__.py

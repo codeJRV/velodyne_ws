@@ -1,0 +1,16 @@
+[01m[Kc++:[m[K [01;31m[Kinternal compiler error: [m[KKilled (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[2]: *** [src/conversions/CMakeFiles/transform_nodelet.dir/transform_nodelet.cc.o] Error 4
+make[2]: *** Waiting for unfinished jobs....
+[01m[Kc++:[m[K [01;31m[Kinternal compiler error: [m[KKilled (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[2]: *** [src/conversions/CMakeFiles/cloud_node.dir/convert.cc.o] Error 4
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [src/conversions/CMakeFiles/cloud_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [src/conversions/CMakeFiles/transform_nodelet.dir/all] Error 2
+make: *** [all] Error 2

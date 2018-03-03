@@ -1,8 +1,1 @@
-prefix=/home/jrv/Research/Velodyne/velodyne_ws/devel
-
-Name: velodyne_driver
-Description: Description of velodyne_driver
-Version: 1.3.0
-Cflags: -I/home/jrv/Research/Velodyne/velodyne_ws/devel/include -I/home/jrv/Research/Velodyne/velodyne_ws/src/velodyne/velodyne_driver/include
-Libs: -L/home/jrv/Research/Velodyne/velodyne_ws/devel/lib -lvelodyne_input
-Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_driver/lib/pkgconfig/velodyne_driver.pc

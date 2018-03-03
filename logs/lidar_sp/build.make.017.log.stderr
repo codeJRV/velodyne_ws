@@ -1,0 +1,143 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::cloud_callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KcopyPointCloud(pcl::PointCloud<pcl::PointXYZ>&, std::vector<pcl::PointCloud<pcl::PointXYZI> >&)[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:265:3:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::copyPointCloud(const pcl::PCLPointCloud2&, const std::vector<int>&, pcl::PCLPointCloud2&)
+   copyPointCloud (const pcl::PCLPointCloud2 &cloud_in,
+[01;32m[K   ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:265:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:277:3:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::copyPointCloud(const pcl::PCLPointCloud2&, const std::vector<int, Eigen::aligned_allocator<int> >&, pcl::PCLPointCloud2&)
+   copyPointCloud (const pcl::PCLPointCloud2 &cloud_in,
+[01;32m[K   ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:277:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:287:3:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::copyPointCloud(const pcl::PCLPointCloud2&, pcl::PCLPointCloud2&)
+   copyPointCloud (const pcl::PCLPointCloud2 &cloud_in,
+[01;32m[K   ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/io.h:287:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>[m[K’ to ‘[01m[Kconst pcl::PCLPointCloud2&[m[K’
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:134:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<int>&, pcl::PointCloud<PointT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, 
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:134:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<int>&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:161:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<int, Eigen::aligned_allocator<int> >&, pcl::PointCloud<PointT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, 
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:161:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<int, Eigen::aligned_allocator<int> >&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:228:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, 
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:228:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst pcl::PointIndices&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:264:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<pcl::PointIndices>&, pcl::PointCloud<PointT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, 
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:264:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<pcl::PointIndices>&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:111:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointInT, class PointOutT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointOutT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:111:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ is not derived from ‘[01m[Kpcl::PointCloud<PointOutT>[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:188:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointInT, class PointOutT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<int>&, pcl::PointCloud<PointOutT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:188:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<int>&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:208:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointInT, class PointOutT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<int, Eigen::aligned_allocator<int> >&, pcl::PointCloud<PointOutT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:208:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<int, Eigen::aligned_allocator<int> >&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:255:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointInT, class PointOutT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointOutT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:255:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst pcl::PointIndices&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:304:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointInT, class PointOutT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, const std::vector<pcl::PointIndices>&, pcl::PointCloud<PointOutT>&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in, 
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:304:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KcloudVector[m[K’ (type ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’) to type ‘[01m[Kconst std::vector<pcl::PointIndices>&[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:531:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:377:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class PointT> void pcl::copyPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, int, int, int, int, pcl::InterpolationType, const PointT&)
+ pcl::copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, pcl::PointCloud<PointT> &cloud_out,
+[01;32m[K ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/common/impl/io.hpp:377:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:111:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ is not derived from ‘[01m[Kpcl::PointCloud<PointT>[m[K’
+     copyPointCloud (cloud, cloudVector);
+[01;32m[K                                       ^[m[K
+make[2]: *** [CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o] Error 1
+make[1]: *** [CMakeFiles/lidar_sp.dir/all] Error 2
+make: *** [all] Error 2

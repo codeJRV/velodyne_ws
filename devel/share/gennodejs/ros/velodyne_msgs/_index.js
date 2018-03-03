@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/share/gennodejs/ros/velodyne_msgs/_index.js

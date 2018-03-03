@@ -68,7 +68,7 @@ set(velodyne_visualizer_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(velodyne_visualizer_SOURCE_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/src/velodyne_visualizer)
-  set(velodyne_visualizer_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel)
+  set(velodyne_visualizer_DEVEL_PREFIX /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_visualizer)
   set(velodyne_visualizer_INSTALL_PREFIX "")
   set(velodyne_visualizer_PREFIX ${velodyne_visualizer_DEVEL_PREFIX})
 else()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jrv/Research/Velodyne/velodyne_ws/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/jrv/Research/Velodyne/velodyne_ws/install/lib;/home/jrv/Research/Velodyne/velodyne_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,2 +1,1 @@
-from ._VelodynePacket import *
-from ._VelodyneScan import *
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/lib/python2.7/dist-packages/velodyne_msgs/msg/__init__.py
