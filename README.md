@@ -43,9 +43,8 @@ Follow instructions you find in this <a href="http://wiki.ros.org/ROS/Installati
 
 * When you configure the ROS Environment, choose catkin.
 
-* Complete the tutorial <a href="http://wiki.ros.org/ROS/Tutorials" target="_parent">page</a>. It is mandatory to follow the tutorial number 1 "Installing and Configuring Your ROS Environment".
 
-Now we have installed ROS and we have created our workspace.
+Once we have installed ROS with all the dependencies : PCL, Velodyne, etc and we have created our workspace.
 
 * Open the file bashrc:
 	` gedit ~/.bashrc`
