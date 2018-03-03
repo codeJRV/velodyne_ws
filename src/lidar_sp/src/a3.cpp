@@ -2,24 +2,14 @@
 #include <pcl/point_cloud.h>
 #include <pcl_conversions/pcl_conversions.h>
 #include <sensor_msgs/PointCloud2.h>
-#include <pcl/filters/statistical_outlier_removal.h>
-
 #include <iostream>
 #include <pcl/ModelCoefficients.h>
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
-#include <pcl/sample_consensus/method_types.h>
-#include <pcl/sample_consensus/model_types.h>
-#include <pcl/segmentation/sac_segmentation.h>
-
-#include <pcl/ModelCoefficients.h>
-#include <pcl/io/pcd_io.h>
-#include <pcl/point_types.h>
 #include <pcl/filters/extract_indices.h>
-#include <pcl/filters/passthrough.h>
 #include <pcl/features/normal_3d.h>
-#include <pcl/sample_consensus/method_types.h>
-#include <pcl/sample_consensus/model_types.h>
+#include <pcl/sample_consensus/method_types.h>  
+#include <pcl/sample_consensus/model_types.h>   
 #include <pcl/segmentation/sac_segmentation.h>
 
 typedef pcl::PointXYZRGB PointT;
@@ -45,8 +35,6 @@ cloud_filter::cloud_filter()
 
 void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
 {
-  //pcl::PointCloud<PointT> cloud, filtered_cloud;
-
 
   pcl::PointCloud<PointT>::Ptr cloud( new pcl::PointCloud<PointT>() ), filtered_cloud( new pcl::PointCloud<PointT>() );
 
@@ -63,10 +51,8 @@ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
    seg.setModelType(pcl::SACMODEL_PARALLEL_LINE); 
    seg.setDistanceThreshold(0.1);                                                       // NEED TO UNDERSTAND TO TUNE THESE VALUES 
    seg.setAxis(Eigen::Vector3f(0,0,1)); // Vertical axis                                // NEED TO UNDERSTAND TO TUNE THESE VALUES 
-   seg.setEpsAngle(0.174533);    //10 degrees                                           // NEED TO UNDERSTAND TO TUNE THESE VALUES 
-
+   seg.setEpsAngle(0.174533);           //10 degrees                                    // NEED TO UNDERSTAND TO TUNE THESE VALUES 
    pcl::ExtractIndices<PointT> extract;
-   //std::cerr << "Reached yo " ;
 
    // Obtain the plane inliers and coefficients
     seg.segment (*inliers, *coefficients);
@@ -80,11 +66,10 @@ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
   //           << coefficients->values[1] << " "
   //           << coefficients->values[2] << " "
   //           << coefficients->values[3] << std::endl;
-
   // std::cerr << "Model inliers: " << inliers->indices.size() << std::endl;
 
 
-   extract.filter (*filtered_cloud);
+  extract.filter (*filtered_cloud);
 
   pcl::toROSMsg(*filtered_cloud, result);
 
