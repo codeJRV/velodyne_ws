@@ -1,0 +1,46 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler::cloudCB(const PointCloud2&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:48:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksensor_msgs::PointCloud2 {aka sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         output->header.stamp = input->header.stamp;
+[01;32m[K               ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:48:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         output->header.stamp = input->header.stamp;
+[01;32m[K                                     ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:49:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksensor_msgs::PointCloud2 {aka sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         output->header.frame_id = input->header.frame_id;
+[01;32m[K               ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:49:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         output->header.frame_id = input->header.frame_id;
+[01;32m[K                                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:50:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksensor_msgs::PointCloud2 {aka sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         output->height = 1;
+[01;32m[K               ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:52:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+         for (size_t i = 0; i < input->points.size(); ++i)
+[01;32m[K                                     ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:54:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+             cloud.points[i].x = input->points[i].x;
+[01;32m[K                                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:55:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+             cloud.points[i].y = input->points[i].y;
+[01;32m[K                                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:56:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+             cloud.points[i].z = input->points[i].z;
+[01;32m[K                                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:61:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+             if (input->points[i].ring != 0 && input->points[i].ring != 1)
+[01;32m[K                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:61:52:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst PointCloud2 {aka const sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+             if (input->points[i].ring != 0 && input->points[i].ring != 1)
+[01;32m[K                                                    ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:63:27:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksensor_msgs::PointCloud2 {aka sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+                     output->points.push_back(p);
+[01;32m[K                           ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:63:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+                     output->points.push_back(p);
+[01;32m[K                                              ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:64:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ksensor_msgs::PointCloud2 {aka sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’
+                     ++output->width;
+[01;32m[K                             ^[m[K
+make[2]: *** [CMakeFiles/a1.dir/src/a1.cpp.o] Error 1
+make[1]: *** [CMakeFiles/a1.dir/all] Error 2
+make: *** [all] Error 2

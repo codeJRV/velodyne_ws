@@ -262,6 +262,9 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
 
+//The directory containing a CMake configuration file for angles.
+angles_DIR:PATH=/opt/ros/kinetic/share/angles/cmake
+
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
 
@@ -439,6 +442,9 @@ velodyne_driver_DIR:PATH=/home/jrv/Research/Velodyne/velodyne_ws/devel/share/vel
 
 //The directory containing a CMake configuration file for velodyne_msgs.
 velodyne_msgs_DIR:PATH=/home/jrv/Research/Velodyne/velodyne_ws/devel/share/velodyne_msgs/cmake
+
+//The directory containing a CMake configuration file for velodyne_pointcloud.
+velodyne_pointcloud_DIR:PATH=/home/jrv/Research/Velodyne/velodyne_ws/devel/share/velodyne_pointcloud/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake

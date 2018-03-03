@@ -1,18 +1,36 @@
-[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::cloud_callback(const PointCloud2ConstPtr&)[m[K’:
-[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:30:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
-   pcl::toROSMsg(cloudVector, output);
-[01;32m[K                              ^[m[K
-[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
-In file included from [01m[K/usr/include/boost/iostreams/close.hpp:17:0[m[K,
-                 from [01m[K/usr/include/boost/iostreams/device/mapped_file.hpp:20[m[K,
-                 from [01m[K/usr/include/pcl-1.7/pcl/io/boost.h:77[m[K,
-                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:43[m[K,
-                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
-                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
-                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4[m[K:
-[01m[K/usr/include/boost/iostreams/categories.hpp:28:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::iostreams::output[m[K’
- struct output : virtual any_tag { };
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler::cloudCB(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:44:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KfromROSMsg(const PointCloud2ConstPtr&, pcl::PointCloud<pcl::PointXYZ>&)[m[K’
+         pcl::fromROSMsg(input, cloud);
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:5:0[m[K:
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:547:8:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> void pcl::fromROSMsg(const PointCloud2&, pcl::PointCloud<PointT>&)
+   void fromROSMsg(const sensor_msgs::PointCloud2 &cloud, pcl::PointCloud<T> &pcl_cloud)
 [01;32m[K        ^[m[K
-make[2]: *** [CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o] Error 1
-make[1]: *** [CMakeFiles/lidar_sp.dir/all] Error 2
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:547:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:44:37:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kinput[m[K’ (type ‘[01m[Kconst PointCloud2ConstPtr {aka const boost::shared_ptr<const sensor_msgs::PointCloud2_<std::allocator<void> > >}[m[K’) to type ‘[01m[Kconst PointCloud2& {aka const sensor_msgs::PointCloud2_<std::allocator<void> >&}[m[K’
+         pcl::fromROSMsg(input, cloud);
+[01;32m[K                                     ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:52:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+         for (size_t i = 0; i < input->points.size(); ++i)
+[01;32m[K                                       ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:54:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+             cloud.points[i].x = input->points[i].x;
+[01;32m[K                                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:55:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+             cloud.points[i].y = input->points[i].y;
+[01;32m[K                                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:56:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+             cloud.points[i].z = input->points[i].z;
+[01;32m[K                                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:61:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+             if (input->points[i].ring != 0 && input->points[i].ring != 1)
+[01;32m[K                        ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:61:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+             if (input->points[i].ring != 0 && input->points[i].ring != 1)
+[01;32m[K                                                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:63:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::PointCloud2 {aka struct sensor_msgs::PointCloud2_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpoints[m[K’
+                     output.points.push_back(cloud.points[i]);
+[01;32m[K                            ^[m[K
+make[2]: *** [CMakeFiles/a1.dir/src/a1.cpp.o] Error 1
+make[1]: *** [CMakeFiles/a1.dir/all] Error 2
 make: *** [all] Error 2

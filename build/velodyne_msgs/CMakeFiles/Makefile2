@@ -481,9 +481,9 @@ clean: CMakeFiles/run_tests.dir/clean
 # Target rules for target CMakeFiles/velodyne_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/all: CMakeFiles/_velodyne_msgs_generate_messages_check_deps_VelodyneScan.dir/all
 CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/all: CMakeFiles/_velodyne_msgs_generate_messages_check_deps_VelodynePacket.dir/all
+CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/build.make CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/build.make CMakeFiles/velodyne_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_msgs/CMakeFiles --progress-num=10,11 "Built target velodyne_msgs_generate_messages_lisp"
@@ -686,9 +686,9 @@ clean: CMakeFiles/velodyne_msgs_generate_messages_cpp.dir/clean
 # Target rules for target CMakeFiles/velodyne_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-CMakeFiles/velodyne_msgs_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
 CMakeFiles/velodyne_msgs_generate_messages_eus.dir/all: CMakeFiles/_velodyne_msgs_generate_messages_check_deps_VelodyneScan.dir/all
 CMakeFiles/velodyne_msgs_generate_messages_eus.dir/all: CMakeFiles/_velodyne_msgs_generate_messages_check_deps_VelodynePacket.dir/all
+CMakeFiles/velodyne_msgs_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/velodyne_msgs_generate_messages_eus.dir/build.make CMakeFiles/velodyne_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/velodyne_msgs_generate_messages_eus.dir/build.make CMakeFiles/velodyne_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jrv/Research/Velodyne/velodyne_ws/build/velodyne_msgs/CMakeFiles --progress-num=7,8,9 "Built target velodyne_msgs_generate_messages_eus"

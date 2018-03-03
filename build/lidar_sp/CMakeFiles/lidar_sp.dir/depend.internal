@@ -3,11 +3,14 @@
 
 CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o
  /home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp
+ /home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.h
+ /home/jrv/Research/Velodyne/velodyne_ws/src/velodyne/velodyne_pointcloud/include/velodyne_pointcloud/point_types.h
  /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
  /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
  /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
  /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
  /opt/ros/kinetic/include/pcl_msgs/Vertices.h
+ /opt/ros/kinetic/include/pcl_ros/point_cloud.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
@@ -283,10 +286,8 @@ CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o
  /usr/include/pcl-1.7/pcl/PolygonMesh.h
  /usr/include/pcl-1.7/pcl/TextureMesh.h
  /usr/include/pcl-1.7/pcl/Vertices.h
- /usr/include/pcl-1.7/pcl/common/common.h
  /usr/include/pcl-1.7/pcl/common/concatenate.h
  /usr/include/pcl-1.7/pcl/common/copy_point.h
- /usr/include/pcl-1.7/pcl/common/impl/common.hpp
  /usr/include/pcl-1.7/pcl/common/impl/copy_point.hpp
  /usr/include/pcl-1.7/pcl/common/impl/io.hpp
  /usr/include/pcl-1.7/pcl/common/io.h

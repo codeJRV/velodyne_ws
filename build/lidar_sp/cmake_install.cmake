@@ -114,6 +114,21 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
 file(INSTALL DESTINATION "/home/jrv/Research/Velodyne/velodyne_ws/install" TYPE FILE FILES "/home/jrv/Research/Velodyne/velodyne_ws/build/lidar_sp/catkin_generated/installspace/.rosinstall")
 endif()
 
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jrv/Research/Velodyne/velodyne_ws/build/lidar_sp/catkin_generated/installspace/lidar_sp.pc")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lidar_sp/cmake" TYPE FILE FILES
+    "/home/jrv/Research/Velodyne/velodyne_ws/build/lidar_sp/catkin_generated/installspace/lidar_spConfig.cmake"
+    "/home/jrv/Research/Velodyne/velodyne_ws/build/lidar_sp/catkin_generated/installspace/lidar_spConfig-version.cmake"
+    )
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lidar_sp" TYPE FILE FILES "/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/package.xml")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jrv/Research/Velodyne/velodyne_ws/build/lidar_sp/gtest/cmake_install.cmake")

@@ -1,64 +1,65 @@
-[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:[m[K In member function ‘[01m[Kvoid cloudHandler<PointT>::cloud_callback(const PointCloud2ConstPtr&)[m[K’:
-[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:123:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KfromPCL(std::vector<pcl::PointCloud<pcl::PointXYZI> >&, sensor_msgs::PointCloud2&)[m[K’
-   pcl_conversions::fromPCL (cloudVector, output)
-[01;32m[K                                                ^[m[K
-In file included from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/lidar_sp.cpp:4:0[m[K:
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:80:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const uint64_t&, ros::Time&)
-   void fromPCL(const pcl::uint64_t &pcl_stamp, ros::Time &stamp)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:80:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst uint64_t& {aka const long unsigned int&}[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:92:13:[m[K [01;36m[Knote: [m[Kcandidate: ros::Time pcl_conversions::fromPCL(const uint64_t&)
-   ros::Time fromPCL(const pcl::uint64_t &pcl_stamp)
-[01;32m[K             ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:92:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:110:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PCLHeader&, std_msgs::Header&)
-   void fromPCL(const pcl::PCLHeader &pcl_header, std_msgs::Header &header)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:110:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PCLHeader&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:126:20:[m[K [01;36m[Knote: [m[Kcandidate: std_msgs::Header pcl_conversions::fromPCL(const pcl::PCLHeader&)
-   std_msgs::Header fromPCL(const pcl::PCLHeader &pcl_header)
-[01;32m[K                    ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:126:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:155:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PCLImage&, sensor_msgs::Image&)
-   void fromPCL(const pcl::PCLImage &pcl_image, sensor_msgs::Image &image)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:155:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PCLImage&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:196:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PCLPointField&, sensor_msgs::PointField&)
-   void fromPCL(const pcl::PCLPointField &pcl_pf, sensor_msgs::PointField &pf)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:196:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PCLPointField&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:205:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const std::vector<pcl::PCLPointField>&, std::vector<sensor_msgs::PointField_<std::allocator<void> > >&)
-   void fromPCL(const std::vector<pcl::PCLPointField> &pcl_pfs, std::vector<sensor_msgs::PointField> &pfs)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:205:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst std::vector<pcl::PCLPointField>&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:251:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PCLPointCloud2&, sensor_msgs::PointCloud2&)
-   void fromPCL(const pcl::PCLPointCloud2 &pcl_pc2, sensor_msgs::PointCloud2 &pc2)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:251:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PCLPointCloud2&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:294:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PointIndices&, pcl_msgs::PointIndices&)
-   void fromPCL(const pcl::PointIndices &pcl_pi, pcl_msgs::PointIndices &pi)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:294:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PointIndices&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:324:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::ModelCoefficients&, pcl_msgs::ModelCoefficients&)
-   void fromPCL(const pcl::ModelCoefficients &pcl_mc, pcl_msgs::ModelCoefficients &mc)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:324:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::ModelCoefficients&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:354:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::Vertices&, pcl_msgs::Vertices&)
-   void fromPCL(const pcl::Vertices &pcl_vert, pcl_msgs::Vertices &vert)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:354:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::Vertices&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:360:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const std::vector<pcl::Vertices>&, std::vector<pcl_msgs::Vertices_<std::allocator<void> > >&)
-   void fromPCL(const std::vector<pcl::Vertices> &pcl_verts, std::vector<pcl_msgs::Vertices> &verts)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:360:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst std::vector<pcl::Vertices>&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:377:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(std::vector<pcl::Vertices>&, std::vector<pcl_msgs::Vertices_<std::allocator<void> > >&)
-   void fromPCL(std::vector<pcl::Vertices> &pcl_verts, std::vector<pcl_msgs::Vertices> &verts)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:377:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kstd::vector<pcl::Vertices>&[m[K’
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:424:8:[m[K [01;36m[Knote: [m[Kcandidate: void pcl_conversions::fromPCL(const pcl::PolygonMesh&, pcl_msgs::PolygonMesh&)
-   void fromPCL(const pcl::PolygonMesh &pcl_mesh, pcl_msgs::PolygonMesh &mesh)
-[01;32m[K        ^[m[K
-[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:424:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> >[m[K’ to ‘[01m[Kconst pcl::PolygonMesh&[m[K’
-make[2]: *** [CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o] Error 1
-make[1]: *** [CMakeFiles/lidar_sp.dir/all] Error 2
+In file included from [01m[K/opt/ros/kinetic/include/ros/serialization.h:37:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:1[m[K:
+/opt/ros/kinetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:255:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/publisher.h:112:7:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:85:31:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:126:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class pcl::PointCloud<pcl::PointXYZRGB>[m[K’ has no member named ‘[01m[K__getMD5Sum[m[K’
+     return m.__getMD5Sum().c_str();
+[01;32m[K                                  ^[m[K
+/opt/ros/kinetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:264:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/publisher.h:112:7:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:85:31:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:143:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class pcl::PointCloud<pcl::PointXYZRGB>[m[K’ has no member named ‘[01m[K__getDataType[m[K’
+     return m.__getDataType().c_str();
+[01;32m[K                                    ^[m[K
+/opt/ros/kinetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value() [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:228:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum() [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/subscribe_options.h:110:49:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::init(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const boost::function<boost::shared_ptr<X>()>&) [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:470:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&) [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; T = cloudHandler; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:56:84:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:121:28:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMD5Sum[m[K’ is not a member of ‘[01m[Kpcl::PointCloud<velodyne_pointcloud::PointXYZIR>[m[K’
+     return M::__s_getMD5Sum().c_str();
+[01;32m[K                            ^[m[K
+/opt/ros/kinetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value() [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:237:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype() [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/subscribe_options.h:111:53:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::init(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const boost::function<boost::shared_ptr<X>()>&) [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:470:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&) [with M = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; T = cloudHandler; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:56:84:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/message_traits.h:138:30:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getDataType[m[K’ is not a member of ‘[01m[Kpcl::PointCloud<velodyne_pointcloud::PointXYZIR>[m[K’
+     return M::__s_getDataType().c_str();
+[01;32m[K                              ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/publisher.h:34:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:1[m[K:
+/opt/ros/kinetic/include/ros/serialization.h: In instantiation of ‘[01m[Kstatic uint32_t ros::serialization::Serializer<T>::serializedLength(typename boost::call_traits<T>::param_type) [with T = pcl::PointCloud<pcl::PointXYZRGB>; uint32_t = unsigned int; typename boost::call_traits<T>::param_type = const pcl::PointCloud<pcl::PointXYZRGB>&][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:172:41:[m[K   required from ‘[01m[Kuint32_t ros::serialization::serializationLength(const T&) [with T = pcl::PointCloud<pcl::PointXYZRGB>; uint32_t = unsigned int][m[K’
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:848:37:[m[K   required from ‘[01m[Kros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/publisher.h:118:26:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:85:31:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:144:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class pcl::PointCloud<pcl::PointXYZRGB>[m[K’ has no member named ‘[01m[KserializationLength[m[K’
+     return t.serializationLength();
+[01;32m[K                                  ^[m[K
+/opt/ros/kinetic/include/ros/serialization.h: In instantiation of ‘[01m[Kstatic void ros::serialization::Serializer<T>::write(Stream&, typename boost::call_traits<T>::param_type) [with Stream = ros::serialization::OStream; T = pcl::PointCloud<pcl::PointXYZRGB>; typename boost::call_traits<T>::param_type = const pcl::PointCloud<pcl::PointXYZRGB>&][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:154:23:[m[K   required from ‘[01m[Kvoid ros::serialization::serialize(Stream&, const T&) [with T = pcl::PointCloud<pcl::PointXYZRGB>; Stream = ros::serialization::OStream][m[K’
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:855:12:[m[K   required from ‘[01m[Kros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/opt/ros/kinetic/include/ros/publisher.h:118:26:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:85:31:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:127:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class pcl::PointCloud<pcl::PointXYZRGB>[m[K’ has no member named ‘[01m[Kserialize[m[K’
+     t.serialize(stream.getData(), 0);
+[01;32m[K     ^[m[K
+/opt/ros/kinetic/include/ros/serialization.h: In instantiation of ‘[01m[Kstatic void ros::serialization::Serializer<T>::read(Stream&, typename boost::call_traits<T>::reference) [with Stream = ros::serialization::IStream; T = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; typename boost::call_traits<T>::reference = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>&][m[K’:
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:163:22:[m[K   required from ‘[01m[Kvoid ros::serialization::deserialize(Stream&, T&) [with T = pcl::PointCloud<velodyne_pointcloud::PointXYZIR>; Stream = ros::serialization::IStream][m[K’
+[01m[K/opt/ros/kinetic/include/ros/subscription_callback_helper.h:136:21:[m[K   required from ‘[01m[Kros::VoidConstPtr ros::SubscriptionCallbackHelperT<P, Enabled>::deserialize(const ros::SubscriptionCallbackHelperDeserializeParams&) [with P = const boost::shared_ptr<const pcl::PointCloud<velodyne_pointcloud::PointXYZIR> >&; Enabled = void; ros::VoidConstPtr = boost::shared_ptr<const void>][m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a1.cpp:106:1:[m[K   required from here
+[01m[K/opt/ros/kinetic/include/ros/serialization.h:136:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pcl::PointCloud<velodyne_pointcloud::PointXYZIR>[m[K’ has no member named ‘[01m[Kdeserialize[m[K’
+     t.deserialize(stream.getData());
+[01;32m[K     ^[m[K
+make[2]: *** [CMakeFiles/a1.dir/src/a1.cpp.o] Error 1
+make[1]: *** [CMakeFiles/a1.dir/all] Error 2
 make: *** [all] Error 2

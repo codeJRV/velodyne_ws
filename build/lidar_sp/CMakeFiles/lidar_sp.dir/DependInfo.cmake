@@ -16,9 +16,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_pointcloud/include"
   "/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_driver/include"
   "/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/velodyne_msgs/include"
   "/home/jrv/Research/Velodyne/velodyne_ws/src/velodyne/velodyne_driver/include"
+  "/home/jrv/Research/Velodyne/velodyne_ws/src/velodyne/velodyne_pointcloud/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

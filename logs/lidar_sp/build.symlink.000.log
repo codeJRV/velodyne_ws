@@ -1,12 +1,4 @@
-Cleaning: (/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/pkgconfig/lidar_sp.pc, /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/pkgconfig/lidar_sp.pc)
-Cleaning: (/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/lidar_sp, /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/lidar_sp)
-Cleaning: (/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/share/lidar_sp/cmake/lidar_spConfig.cmake, /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig.cmake)
-Cleaning: (/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/share/lidar_sp/cmake/lidar_spConfig-version.cmake, /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig-version.cmake)
-Unlinking: /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/pkgconfig/lidar_sp.pc
-Already unlinked: {}
-Unlinking: /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/lidar_sp
-Already unlinked: {}
-Unlinking: /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig.cmake
-Already unlinked: {}
-Unlinking: /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig-version.cmake
-Already unlinked: {}
+Symlinking /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/pkgconfig/lidar_sp.pc
+Symlinking /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a1
+Symlinking /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig.cmake
+Symlinking /home/jrv/Research/Velodyne/velodyne_ws/devel/share/lidar_sp/cmake/lidar_spConfig-version.cmake

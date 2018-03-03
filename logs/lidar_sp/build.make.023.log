@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target lidar_sp[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_sp.dir/src/lidar_sp.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/lidar_sp[0m
+[100%] Built target lidar_sp
