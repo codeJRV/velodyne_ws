@@ -15,7 +15,7 @@
   {
     // advertise output point cloud (before subscribing to input data)
     output_ =
-      nh_.advertise<sensor_msgs::PointCloud2>("velodyne_cuts", 10);
+      nh_.advertise<sensor_msgs::PointCloud2>("two_channel_removal_cloud", 10);
 
     // subscribe to VelodyneScan packets
     input_ =

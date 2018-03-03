@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a2_helper
+# Target rules for targets named a3
 
 # Build rule for target.
-a2_helper: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 a2_helper
-.PHONY : a2_helper
+a3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a3
+.PHONY : a3
 
 # fast build rule for target.
-a2_helper/fast:
-	$(MAKE) -f CMakeFiles/a2_helper.dir/build.make CMakeFiles/a2_helper.dir/build
-.PHONY : a2_helper/fast
+a3/fast:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/build
+.PHONY : a3/fast
 
 #=============================================================================
 # Target rules for targets named nodelet_generate_messages_nodejs
@@ -1508,32 +1508,32 @@ src/a2.cpp.s:
 	$(MAKE) -f CMakeFiles/a2.dir/build.make CMakeFiles/a2.dir/src/a2.cpp.s
 .PHONY : src/a2.cpp.s
 
-src/a2_helper.o: src/a2_helper.cpp.o
+src/a3.o: src/a3.cpp.o
 
-.PHONY : src/a2_helper.o
+.PHONY : src/a3.o
 
 # target to build an object file
-src/a2_helper.cpp.o:
-	$(MAKE) -f CMakeFiles/a2_helper.dir/build.make CMakeFiles/a2_helper.dir/src/a2_helper.cpp.o
-.PHONY : src/a2_helper.cpp.o
+src/a3.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/a3.cpp.o
+.PHONY : src/a3.cpp.o
 
-src/a2_helper.i: src/a2_helper.cpp.i
+src/a3.i: src/a3.cpp.i
 
-.PHONY : src/a2_helper.i
+.PHONY : src/a3.i
 
 # target to preprocess a source file
-src/a2_helper.cpp.i:
-	$(MAKE) -f CMakeFiles/a2_helper.dir/build.make CMakeFiles/a2_helper.dir/src/a2_helper.cpp.i
-.PHONY : src/a2_helper.cpp.i
+src/a3.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/a3.cpp.i
+.PHONY : src/a3.cpp.i
 
-src/a2_helper.s: src/a2_helper.cpp.s
+src/a3.s: src/a3.cpp.s
 
-.PHONY : src/a2_helper.s
+.PHONY : src/a3.s
 
 # target to generate assembly for a file
-src/a2_helper.cpp.s:
-	$(MAKE) -f CMakeFiles/a2_helper.dir/build.make CMakeFiles/a2_helper.dir/src/a2_helper.cpp.s
-.PHONY : src/a2_helper.cpp.s
+src/a3.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/a3.cpp.s
+.PHONY : src/a3.cpp.s
 
 # Help Target
 help:
@@ -1544,7 +1544,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
-	@echo "... a2_helper"
+	@echo "... a3"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -1653,9 +1653,9 @@ help:
 	@echo "... src/a2.o"
 	@echo "... src/a2.i"
 	@echo "... src/a2.s"
-	@echo "... src/a2_helper.o"
-	@echo "... src/a2_helper.i"
-	@echo "... src/a2_helper.s"
+	@echo "... src/a3.o"
+	@echo "... src/a3.i"
+	@echo "... src/a3.s"
 .PHONY : help
 
 

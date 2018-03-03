@@ -1,5 +1,6 @@
 lidar_sp
 /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/pkgconfig/lidar_sp.pc /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/pkgconfig/lidar_sp.pc
+/home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a3 /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a3
 /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a2 /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a2
 /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a1 /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/a1
 /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/lidar_sp /home/jrv/Research/Velodyne/velodyne_ws/devel/lib/lidar_sp/lidar_sp

@@ -210,5 +210,5 @@ target_link_libraries (a1 ${catkin_LIBRARIES})
 add_executable (a2 src/a2.cpp)
 target_link_libraries (a2 ${catkin_LIBRARIES})
 
-add_executable (a2_helper src/a2_helper.cpp)
-target_link_libraries (a2_helper ${catkin_LIBRARIES})
+add_executable (a3 src/a3.cpp)
+target_link_libraries (a3 ${catkin_LIBRARIES})

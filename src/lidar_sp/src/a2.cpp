@@ -18,7 +18,7 @@ protected:
 
 cloud_filter::cloud_filter()
 {
-pcl_sub = nh.subscribe("/velodyne_cuts",10,&cloud_filter::cloud_sub_pub,this);
+pcl_sub = nh.subscribe("/two_channel_removal_cloud",10,&cloud_filter::cloud_sub_pub,this);
 pcl_pub = nh.advertise<sensor_msgs::PointCloud2>("statistical_outlier_removal_cloud",1);
 }
 
