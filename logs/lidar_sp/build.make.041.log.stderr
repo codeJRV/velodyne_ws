@@ -1,0 +1,22 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:[m[K In member function ‘[01m[Kvoid cloud_filter::cloud_sub_pub(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:61:26:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _stamp_type {aka const ros::Time}[m[K’ to ‘[01m[Kuint64_t {aka long unsigned int}[m[K’ in assignment
+     outMsg->header.stamp = inMsg->header.stamp;
+[01;32m[K                          ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:67:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+     for (size_t i = 0; i < inMsg->points.size(); ++i)
+[01;32m[K                                   ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:70:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+         p.x = inMsg->points[i].x;
+[01;32m[K                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:71:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+         p.y = inMsg->points[i].y;
+[01;32m[K                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:72:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+         p.z = inMsg->points[i].z;
+[01;32m[K                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:73:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::PointCloud2_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpoints[m[K’
+         p.rgb = inMsg->points[i].rgb;
+[01;32m[K                        ^[m[K
+make[2]: *** [CMakeFiles/a2.dir/src/a2.cpp.o] Error 1
+make[1]: *** [CMakeFiles/a2.dir/all] Error 2
+make: *** [all] Error 2

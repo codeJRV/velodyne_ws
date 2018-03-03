@@ -1,0 +1,7 @@
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:[m[K In member function ‘[01m[Kvoid cloud_filter::cloud_sub_pub(const ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:73:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct velodyne_pointcloud::PointXYZIR[m[K’ has no member named ‘[01m[Krgb[m[K’
+         p.rgb = inMsg->points[i].rgb;
+[01;32m[K                                  ^[m[K
+make[2]: *** [CMakeFiles/a2.dir/src/a2.cpp.o] Error 1
+make[1]: *** [CMakeFiles/a2.dir/all] Error 2
+make: *** [all] Error 2

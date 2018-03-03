@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target a2[0m
+[ 66%] Built target a2_helper
+[ 66%] Built target a1
+[ 83%] [32mBuilding CXX object CMakeFiles/a2.dir/src/a2.cpp.o[0m
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:52:6:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kvoid cloud_filter::cloud_sub_pub(const PointCloud2ConstPtr&)[m[K’ does not match any in class ‘[01m[Kcloud_filter[m[K’
+ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2ConstPtr &inMsg)
+[01;32m[K      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:38:8:[m[K [01;31m[Kerror: [m[Kcandidate is: void cloud_filter::cloud_sub_pub(const ConstPtr&)
+   void cloud_sub_pub(const VPointCloud::ConstPtr &inMsg);
+[01;32m[K        ^[m[K
+CMakeFiles/a2.dir/build.make:62: recipe for target 'CMakeFiles/a2.dir/src/a2.cpp.o' failed
+make[2]: *** [CMakeFiles/a2.dir/src/a2.cpp.o] Error 1
+CMakeFiles/Makefile2:3149: recipe for target 'CMakeFiles/a2.dir/all' failed
+make[1]: *** [CMakeFiles/a2.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

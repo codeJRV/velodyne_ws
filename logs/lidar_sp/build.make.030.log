@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target a2[0m
-[35m[1mScanning dependencies of target a2_helper[0m
-[ 33%] Built target a1
-[ 50%] [32mBuilding CXX object CMakeFiles/a2.dir/src/a2.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/a2_helper.dir/src/a2_helper.cpp.o[0m
-[ 83%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a2_helper[0m
-[ 83%] Built target a2_helper
-[100%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a2[0m
-[100%] Built target a2

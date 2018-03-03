@@ -1,0 +1,62 @@
+[35m[1mScanning dependencies of target a2[0m
+[ 33%] Built target a2_helper
+[ 66%] Built target a1
+[ 83%] [32mBuilding CXX object CMakeFiles/a2.dir/src/a2.cpp.o[0m
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:[m[K In member function ‘[01m[Kvoid cloud_filter::cloud_sub_pub(const ConstPtr&)[m[K’:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:69:31:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB> cloud[m[K’
+     pcl::PointCloud<RGBPoint> cloud, filtered_cloud;
+[01;32m[K                               ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:54:32:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kpcl::PointCloud<pcl::PointXYZ> cloud[m[K’
+ pcl::PointCloud<pcl::PointXYZ> cloud, filtered_cloud;
+[01;32m[K                                ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:69:38:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB> filtered_cloud[m[K’
+     pcl::PointCloud<RGBPoint> cloud, filtered_cloud;
+[01;32m[K                                      ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:54:39:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kpcl::PointCloud<pcl::PointXYZ> filtered_cloud[m[K’
+ pcl::PointCloud<pcl::PointXYZ> cloud, filtered_cloud;
+[01;32m[K                                       ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:70:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KfromROSMsg(const ConstPtr&, pcl::PointCloud<pcl::PointXYZ>&)[m[K’
+     pcl::fromROSMsg(inMsg,cloud);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:3:0[m[K:
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:547:8:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> void pcl::fromROSMsg(const PointCloud2&, pcl::PointCloud<PointT>&)
+   void fromROSMsg(const sensor_msgs::PointCloud2 &cloud, pcl::PointCloud<T> &pcl_cloud)
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:547:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:70:32:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[KinMsg[m[K’ (type ‘[01m[Kconst ConstPtr {aka const boost::shared_ptr<const pcl::PointCloud<velodyne_pointcloud::PointXYZIR> >}[m[K’) to type ‘[01m[Kconst PointCloud2& {aka const sensor_msgs::PointCloud2_<std::allocator<void> >&}[m[K’
+     pcl::fromROSMsg(inMsg,cloud);
+[01;32m[K                                ^[m[K
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:72:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpcl::StatisticalOutlierRemoval<pcl::PointXYZRGB>::setInputCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr)[m[K’
+     statFilter.setInputCloud(cloud.makeShared());
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/common/io.h:45:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/file_io.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:3[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/pcl_base.h:95:7:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::PCLBase<PointT>::setInputCloud(const PointCloudConstPtr&) [with PointT = pcl::PointXYZRGB; pcl::PCLBase<PointT>::PointCloudConstPtr = boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >]
+       setInputCloud (const PointCloudConstPtr &cloud);
+[01;32m[K       ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/pcl_base.h:95:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >}[m[K’ to ‘[01m[Kconst PointCloudConstPtr& {aka const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >&}[m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:75:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpcl::StatisticalOutlierRemoval<pcl::PointXYZRGB>::filter(pcl::PointCloud<pcl::PointXYZ>&)[m[K’
+     statFilter.filter(filtered_cloud);
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/filters/statistical_outlier_removal.h:43:0[m[K,
+                 from [01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:5[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/filters/filter_indices.h:103:7:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::FilterIndices<PointT>::filter(pcl::FilterIndices<PointT>::PointCloud&) [with PointT = pcl::PointXYZRGB; pcl::FilterIndices<PointT>::PointCloud = pcl::PointCloud<pcl::PointXYZRGB>]
+       filter (PointCloud &output)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/filters/filter_indices.h:103:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>[m[K’ to ‘[01m[Kpcl::FilterIndices<pcl::PointXYZRGB>::PointCloud& {aka pcl::PointCloud<pcl::PointXYZRGB>&}[m[K’
+[01m[K/usr/include/pcl-1.7/pcl/filters/filter_indices.h:112:7:[m[K [01;36m[Knote: [m[Kcandidate: void pcl::FilterIndices<PointT>::filter(std::vector<int>&) [with PointT = pcl::PointXYZRGB]
+       filter (std::vector<int> &indices)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/pcl-1.7/pcl/filters/filter_indices.h:112:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>[m[K’ to ‘[01m[Kstd::vector<int>&[m[K’
+[01m[K/home/jrv/Research/Velodyne/velodyne_ws/src/lidar_sp/src/a2.cpp:84:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct pcl::PointXYZ[m[K’ has no member named ‘[01m[Krgb[m[K’
+         p.rgb = filtered_cloud.points[i].rgb;
+[01;32m[K                                          ^[m[K
+CMakeFiles/a2.dir/build.make:62: recipe for target 'CMakeFiles/a2.dir/src/a2.cpp.o' failed
+make[2]: *** [CMakeFiles/a2.dir/src/a2.cpp.o] Error 1
+CMakeFiles/Makefile2:3149: recipe for target 'CMakeFiles/a2.dir/all' failed
+make[1]: *** [CMakeFiles/a2.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

@@ -1,6 +1,0 @@
-[ 16%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a1[0m
-[ 33%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a2[0m
-[ 50%] [32m[1mLinking CXX executable /home/jrv/Research/Velodyne/velodyne_ws/devel/.private/lidar_sp/lib/lidar_sp/a2_helper[0m
-[ 66%] Built target a1
-[ 83%] Built target a2_helper
-[100%] Built target a2
