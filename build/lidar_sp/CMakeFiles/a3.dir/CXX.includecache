@@ -31,6 +31,24 @@ pcl/sample_consensus/model_types.h
 -
 pcl/segmentation/sac_segmentation.h
 -
+pcl/ModelCoefficients.h
+-
+pcl/io/pcd_io.h
+-
+pcl/point_types.h
+-
+pcl/filters/extract_indices.h
+-
+pcl/filters/passthrough.h
+-
+pcl/features/normal_3d.h
+-
+pcl/sample_consensus/method_types.h
+-
+pcl/sample_consensus/model_types.h
+-
+pcl/segmentation/sac_segmentation.h
+-
 
 /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 vector
@@ -2282,6 +2300,34 @@ pcl/pcl_macros.h
 boost/current_function.hpp
 -
 
+/usr/include/pcl-1.7/pcl/features/feature.h
+boost/function.hpp
+-
+boost/bind.hpp
+-
+pcl/pcl_base.h
+-
+pcl/search/search.h
+-
+pcl/features/impl/feature.hpp
+-
+
+/usr/include/pcl-1.7/pcl/features/impl/feature.hpp
+pcl/search/pcl_search.h
+-
+
+/usr/include/pcl-1.7/pcl/features/impl/normal_3d.hpp
+pcl/features/normal_3d.h
+-
+
+/usr/include/pcl-1.7/pcl/features/normal_3d.h
+pcl/features/feature.h
+-
+pcl/common/centroid.h
+-
+pcl/features/impl/normal_3d.hpp
+-
+
 /usr/include/pcl-1.7/pcl/filters/boost.h
 boost/random.hpp
 -
@@ -2306,6 +2352,12 @@ boost/function.hpp
 boost/optional.hpp
 -
 
+/usr/include/pcl-1.7/pcl/filters/extract_indices.h
+pcl/filters/filter_indices.h
+-
+pcl/filters/impl/extract_indices.hpp
+-
+
 /usr/include/pcl-1.7/pcl/filters/filter.h
 pcl/pcl_base.h
 -
@@ -2326,6 +2378,12 @@ pcl/filters/filter.h
 pcl/filters/impl/filter_indices.hpp
 -
 
+/usr/include/pcl-1.7/pcl/filters/impl/extract_indices.hpp
+pcl/filters/extract_indices.h
+-
+pcl/common/io.h
+-
+
 /usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
 pcl/pcl_macros.h
 -
@@ -2338,10 +2396,22 @@ pcl/pcl_macros.h
 pcl/filters/filter_indices.h
 -
 
+/usr/include/pcl-1.7/pcl/filters/impl/passthrough.hpp
+pcl/filters/passthrough.h
+-
+pcl/common/io.h
+-
+
 /usr/include/pcl-1.7/pcl/filters/impl/statistical_outlier_removal.hpp
 pcl/filters/statistical_outlier_removal.h
 -
 pcl/common/io.h
+-
+
+/usr/include/pcl-1.7/pcl/filters/passthrough.h
+pcl/filters/filter_indices.h
+-
+pcl/filters/impl/passthrough.hpp
 -
 
 /usr/include/pcl-1.7/pcl/filters/statistical_outlier_removal.h

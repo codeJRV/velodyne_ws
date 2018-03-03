@@ -12,6 +12,18 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
+#include <pcl/ModelCoefficients.h>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
+#include <pcl/filters/extract_indices.h>
+#include <pcl/filters/passthrough.h>
+#include <pcl/features/normal_3d.h>
+#include <pcl/sample_consensus/method_types.h>
+#include <pcl/sample_consensus/model_types.h>
+#include <pcl/segmentation/sac_segmentation.h>
+
+typedef pcl::PointXYZ PointT;
+
 class cloud_filter
 {
 
@@ -33,17 +45,20 @@ cloud_filter::cloud_filter()
 
 void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
 {
-  pcl::PointCloud<pcl::PointXYZ> cloud, filtered_cloud;
+  //pcl::PointCloud<PointT> cloud, filtered_cloud;
+
+  pcl::PointCloud<PointT>::Ptr cloud( new pcl::PointCloud<PointT>() ), filtered_cloud( new pcl::PointCloud<PointT>() );
+
   sensor_msgs::PointCloud2 result;
 
-  pcl::fromROSMsg(input, cloud);
+ pcl::fromROSMsg(input,*cloud);
   //////////////////////////////////////////////////////////////////////////////////////////////////////////
   // std::cerr << "Point cloud data: " << cloud.points.size() << " points" << std::endl;
 
   // pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients);
   // pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
   // // Create the segmentation object
-  // pcl::SACSegmentation<pcl::PointXYZRGB> seg;
+  // pcl::SACSegmentation<PointT> seg;
   // // Optional
   // seg.setOptimizeCoefficients(true);
   // // Mandatory
@@ -75,7 +90,24 @@ void cloud_filter::cloud_sub_pub(const sensor_msgs::PointCloud2 &input)
   //   ++filtered_cloud.width;
   // }
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  pcl::toROSMsg(filtered_cloud, result);
+
+
+   pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients ());
+   pcl::PointIndices::Ptr inliers (new pcl::PointIndices ()); 
+   pcl::SACSegmentation<PointT> seg;
+   seg.setOptimizeCoefficients (true);
+   seg.setModelType (pcl::SACMODEL_LINE);
+   seg.setMethodType (pcl::SAC_RANSAC);
+   seg.setDistanceThreshold (0.01);
+   pcl::ExtractIndices<PointT> extract;
+   // Segment the largest planar component from the remaining cloud
+   seg.setInputCloud (cloud);
+   extract.setInputCloud (cloud);
+   extract.setIndices (inliers);
+   extract.setNegative (false);
+   extract.filter (*filtered_cloud);
+
+  pcl::toROSMsg(*filtered_cloud, result);
 
   result.header.stamp = input.header.stamp;
   result.header.frame_id = input.header.frame_id;

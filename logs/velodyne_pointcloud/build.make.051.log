@@ -1,0 +1,8 @@
+[  8%] Built target velodyne_pointcloud_gencfg
+[ 21%] Built target velodyne_rawdata
+[ 47%] Built target ringcolors_nodelet
+[ 47%] Built target ringcolors_node
+[ 60%] Built target cloud_node
+[ 73%] Built target cloud_nodelet
+[ 86%] Built target transform_nodelet
+[100%] Built target transform_node
