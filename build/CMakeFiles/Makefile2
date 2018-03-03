@@ -1002,6 +1002,24 @@ clean: velodyne/velodyne_msgs/CMakeFiles/velodyne_msgs_generate_messages_py.dir/
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory velodyne_visualizer
+
+# Convenience name for "all" pass in the directory.
+velodyne_visualizer/all:
+
+.PHONY : velodyne_visualizer/all
+
+# Convenience name for "clean" pass in the directory.
+velodyne_visualizer/clean:
+
+.PHONY : velodyne_visualizer/clean
+
+# Convenience name for "preinstall" pass in the directory.
+velodyne_visualizer/preinstall:
+
+.PHONY : velodyne_visualizer/preinstall
+
+#=============================================================================
 # Directory level rules for directory velodyne/velodyne_driver
 
 # Convenience name for "all" pass in the directory.

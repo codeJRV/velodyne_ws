@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <name>velodyne_visualizer</name>
+  <version>0.0.0</version>
+  <description>Contains launch files for the velodyne lidar visualizer</description>
+  <author email="jibin@tamu.edu">Jibin Varghese</author>
+  <maintainer email="jibin@tamu.edu">Jibin Varghese</maintainer>
+  <license>BSD</license>
+  <url type="repository">git://github.com/codeJRV/velodyne_ws.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
+
+
