@@ -330,10 +330,6 @@ lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/filter
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/impl/extract_indices.hpp
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/impl/filter_indices.hpp
-lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/impl/passthrough.hpp
-lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/impl/statistical_outlier_removal.hpp
-lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/passthrough.h
-lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/filters/statistical_outlier_removal.h
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/for_each_type.h
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/impl/cloud_iterator.hpp
 lidar_sp/CMakeFiles/a3.dir/src/a3.cpp.o: /usr/include/pcl-1.7/pcl/impl/pcl_base.hpp

@@ -20,6 +20,8 @@ Feel free to use any library you think necessary. You may find the following lin
 ### Download dataset:
 * Download the dataset from [here](https://velodyne-my.sharepoint.com/personal/ykim_velodyne_com/_layouts/15/guestaccess.aspx?docid=1bf125a78846d4bc8b99c05b8208f32cc&authkey=AZr5rkIbs6GziwT5oAoJBiA).
 
+and put it into velodyne_ws/src/velodyne_visualizer/ folder
+
 Velodyne_driver in ROS: (http://wiki.ros.org/velodyne_driver)
  
 ROS bag: (http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%20data)
