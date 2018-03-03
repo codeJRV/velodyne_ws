@@ -1,8 +1,11 @@
 <launch>
 
 <arg name="rosbag_file" default="$(find velodyne_visualizer)/bagfiles/VLP16_video_column.bag" />
+
+ <node pkg="tf" type="static_transform_publisher" name="map2velodyne" args="0.0 0.0 0.0 0 0 0 1 map velodyne 10" />
+
 <node pkg="rosbag" type="play" name="player" output="screen" args="-l $(arg rosbag_file)"/>
-<node name="rviz" pkg="rviz" type="rviz"  />
+<node name="rviz" pkg="rviz" type="rviz" args="-f velodyne -d $(find velodyne_visualizer)/display.rviz" />
 
 </launch>
 
