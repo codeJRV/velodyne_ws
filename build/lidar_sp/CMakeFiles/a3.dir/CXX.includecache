@@ -33,6 +33,12 @@ pcl/sample_consensus/model_types.h
 -
 pcl/segmentation/sac_segmentation.h
 -
+pcl/filters/voxel_grid.h
+-
+pcl/kdtree/kdtree.h
+-
+pcl/segmentation/extract_clusters.h
+-
 
 /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 vector
@@ -2380,6 +2386,24 @@ pcl/pcl_macros.h
 pcl/filters/filter_indices.h
 -
 
+/usr/include/pcl-1.7/pcl/filters/impl/voxel_grid.hpp
+pcl/common/common.h
+-
+pcl/common/io.h
+-
+pcl/filters/voxel_grid.h
+-
+
+/usr/include/pcl-1.7/pcl/filters/voxel_grid.h
+pcl/filters/boost.h
+-
+pcl/filters/filter.h
+-
+map
+-
+pcl/filters/impl/voxel_grid.hpp
+-
+
 /usr/include/pcl-1.7/pcl/for_each_type.h
 boost/mpl/is_sequence.hpp
 -
@@ -3244,6 +3268,18 @@ pcl/common/concatenate.h
 pcl/common/copy_point.h
 -
 pcl/search/impl/search.hpp
+-
+
+/usr/include/pcl-1.7/pcl/segmentation/extract_clusters.h
+pcl/pcl_base.h
+-
+pcl/search/pcl_search.h
+-
+pcl/segmentation/impl/extract_clusters.hpp
+-
+
+/usr/include/pcl-1.7/pcl/segmentation/impl/extract_clusters.hpp
+pcl/segmentation/extract_clusters.h
 -
 
 /usr/include/pcl-1.7/pcl/segmentation/impl/sac_segmentation.hpp
