@@ -29,7 +29,7 @@ ROS bag: (http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%
 
 # Solutions to the Velodyne Challenge
 
-![alt text](https://github.com/codeJRV/velodyne_ws/Demo.png)
+![alt text](https://github.com/codeJRV/velodyne_ws/demo.png)
 
 
 #  View in RVIZ
