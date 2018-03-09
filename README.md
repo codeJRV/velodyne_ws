@@ -29,6 +29,9 @@ ROS bag: (http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%
 
 # Solutions to the Velodyne Challenge
 
+![alt text](https://github.com/codeJRV/velodyne_ws/Demo.png)
+
+
 #  View in RVIZ
 
 In this repository you will find a simple launch file to play a Velodyne rosbag file and visualize the result in RViz.
