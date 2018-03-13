@@ -1,21 +1,10 @@
 # Code for the Velodyne Challenge
 
-PROBLEM STATEMENT : below please see the quiz. Most of our master level candidates complete it in 24 hours.
-
-====
-The Algorithm & DSP team at Velodyne Lab is developing various algorithms to enable our product to be a smart sensor. 
-
-Please implement a lidar signal processing software in C++ in ROS that contains at least the following components.
+Task: implement a lidar signal processing software in C++ in ROS that contains at least the following components.
 * (a). three runnable ROS nodes: 
   * node (a1) removing 2 channels of signals from the 16 channels of Velodyne VLP16 
   * node (a2) removing noise (e.g., isolating points) in the remaining point cloud 
   * node (a3) detecting upright line structures in the point cloud and visualizing in different colors
-  
-* (b). a demo program
-* (c). necessary scripts
-* (d). documentation
-
-Feel free to use any library you think necessary. You may find the following links useful:
 
 ### Download dataset:
 * Download the dataset from [here](https://velodyne-my.sharepoint.com/personal/ykim_velodyne_com/_layouts/15/guestaccess.aspx?docid=1bf125a78846d4bc8b99c05b8208f32cc&authkey=AZr5rkIbs6GziwT5oAoJBiA).
