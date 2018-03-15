@@ -1,4 +1,4 @@
-# Code for the Velodyne Challenge
+# Velodyne Challenge
 
 Task: implement a lidar signal processing software in C++ in ROS that contains at least the following components.
 * (a). three runnable ROS nodes: 
